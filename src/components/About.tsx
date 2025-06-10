@@ -13,7 +13,7 @@ const About = () => {
     Splitting();
     ScrollOut({
       targets: '.text_perspective',
-    });
+    })
   }, []);
 
   const values = [
@@ -120,12 +120,12 @@ const About = () => {
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4"><TurningText text={value.title} />
+              <h4 className="text-xl font-bold text-gray-900 mb-4"><ZippingText text={value.title} />
               {/* <ZippingText text={value.title} /> */}
 
 </h4>
               {/* <p className="text-gray-600 leading-relaxed">{value.description}</p> */}
-              <ZippingText text={value.description} />
+              <TurningText text={value.description} />
             </div>
           ))}
         </div>

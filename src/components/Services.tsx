@@ -67,11 +67,11 @@ const Services = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-                <TurningText text={service.title} />
+                <ZippingText text={service.title} />
               </h3>
               
               {/* <div className="text-gray-600 mb-6 leading-relaxed"> */}
-                <ZippingText text={service.description} />
+                <TurningText text={service.description} />
                 {/* {service.description} */}
               {/* </div> */}
               
@@ -79,7 +79,7 @@ const Services = () => {
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-sm text-gray-500">
                     <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                    {feature}
+                    <ZippingText text={feature} />
                   </li>
                 ))}
               </ul>
