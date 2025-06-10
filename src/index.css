@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  height: 40px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.content__container__text_right {
+  float: right !important;
+}
+
+.content__container__list {
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  animation-name: change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -33.33%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -66.66%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -100%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -66.66%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -33.33%, 0);
+  }
+}
+
+.text_perspective {
+  -webkit-perspective: 16px;
+          perspective: 16px;
+}
+.text_perspective .char {
+  transition: opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
+  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
+  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
+}
+.text_perspective [data-scroll='out'] .char {
+  opacity: 0;
+  -webkit-transform: translate3d(-25px, -20px, -800px);
+          transform: translate3d(-25px, -20px, -800px);
+}
