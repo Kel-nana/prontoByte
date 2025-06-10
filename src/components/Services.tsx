@@ -1,5 +1,8 @@
 import React from 'react';
 import { Code, Cloud, Smartphone, Database, Shield, Cog } from 'lucide-react';
+import ZippingText from '../animations/ZippingText/zippingText';
+import TurningText from '../animations/TurningText/turningText'
+
 
 const Services = () => {
   const services = [
@@ -46,7 +49,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Services
+            <ZippingText text="Our Services" />
           </h2>
           <p className="text-xl text-[#9BD6C9] max-w-3xl mx-auto leading-relaxed">
             Comprehensive technology solutions designed to accelerate your business growth 
@@ -58,18 +61,19 @@ const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="group bg-gray-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="icon--zipping w-16 h-16 bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-                {service.title}
+                <TurningText text={service.title} />
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {service.description}
-              </p>
+              {/* <div className="text-gray-600 mb-6 leading-relaxed"> */}
+                <ZippingText text={service.description} />
+                {/* {service.description} */}
+              {/* </div> */}
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
