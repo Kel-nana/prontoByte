@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import ZippingText from '../animations/ZippingText/zippingText';
 
 const Portfolio = () => {
   const projects = [
@@ -131,7 +132,7 @@ const Portfolio = () => {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                  {project.title}
+                  <ZippingText text={project.title} />
                 </h3>
                 
                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -144,7 +145,8 @@ const Portfolio = () => {
                       key={techIndex}
                       className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded"
                     >
-                      {tech}
+                      {/* {tech} */}
+                      <ZippingText text={tech} />
                     </span>
                   ))}
                 </div>
