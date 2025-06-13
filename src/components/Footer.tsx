@@ -1,5 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Facebook } from 'lucide-react';
+import Logo from '../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,7 @@ const Footer = () => {
     ],
     company: [
       { name: 'About Us', href: '#about' },
-      { name: 'Our Team', href: '#team' },
+      // { name: 'Our Team', href: '#team' },
       { name: 'Portfolio', href: '#portfolio' },
       { name: 'Careers', href: '#contact' },
       { name: 'Blog', href: '#' },
@@ -48,7 +49,7 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/public/fb-dp.png" 
+                  src={Logo} 
                   alt="ProntoByte Logo" 
                   className="h-12 w-12 rounded-full"
                 />
