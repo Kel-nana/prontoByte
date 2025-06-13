@@ -2,6 +2,12 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import ZippingText from '../animations/ZippingText/zippingText';
 import BulgeText from '../animations/BulgeText/BulgeText';
+import Cloud_Solutions from '../assets/Cloud_Solutions.jpeg';
+import Data_Analytics from '../assets/Data_Analytics.jpeg';
+import Enterprise_Software from '../assets/Enterprise_Software.jpeg';
+import IoT_Development from '../assets/IoT_Development.jpeg';
+import Mobile_Development from '../assets/Mobile_Development.jpeg';
+import Web_Development from '../assets/Web_Development.jpeg';
 
 
 const Portfolio = () => {
@@ -10,7 +16,7 @@ const Portfolio = () => {
       title: 'E-Commerce Platform',
       category: 'Web Development',
       description: 'A modern e-commerce platform with advanced features including real-time inventory, payment processing, and analytics dashboard.',
-      image: '../src/assets/Web_Development.jpeg',
+      image: Web_Development,
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       link: '#',
       github: '#'
@@ -19,7 +25,7 @@ const Portfolio = () => {
       title: 'Healthcare Management System',
       category: 'Enterprise Software',
       description: 'Comprehensive healthcare management system for hospitals and clinics with patient records, scheduling, and billing.',
-      image: '../src/assets/Enterprise_Software.jpeg',
+      image: Enterprise_Software,
       technologies: ['Angular', 'Java', 'PostgreSQL', 'AWS'],
       link: '#',
       github: '#'
@@ -28,7 +34,7 @@ const Portfolio = () => {
       title: 'Financial Analytics Dashboard',
       category: 'Data Analytics',
       description: 'Real-time financial analytics dashboard with advanced reporting and predictive analytics capabilities.',
-      image: '../src/assets/Data_Analytics.jpeg',
+      image: Data_Analytics,
       technologies: ['Python', 'Django', 'D3.js', 'TensorFlow'],
       link: '#',
       github: '#'
@@ -37,7 +43,7 @@ const Portfolio = () => {
       title: 'Mobile Banking App',
       category: 'Mobile Development',
       description: 'Secure mobile banking application with biometric authentication and real-time transaction monitoring.',
-      image: '../src/assets/Mobile_Development.jpeg',
+      image: Mobile_Development,
       technologies: ['React Native', 'Firebase', 'Biometrics', 'Encryption'],
       link: '#',
       github: '#'
@@ -46,7 +52,7 @@ const Portfolio = () => {
       title: 'Cloud Infrastructure Migration',
       category: 'Cloud Solutions',
       description: 'Complete migration of legacy systems to AWS cloud with improved scalability and reduced costs.',
-      image: '../src/assets/Cloud_Solutions.jpeg',
+      image: Cloud_Solutions,
       technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
       link: '#',
       github: '#'
@@ -55,7 +61,7 @@ const Portfolio = () => {
       title: 'IoT Monitoring System',
       category: 'IoT Development',
       description: 'Industrial IoT monitoring system for real-time equipment tracking and predictive maintenance.',
-      image: '../src/assets/IoT_Development.jpeg',
+      image: IoT_Development,
       technologies: ['IoT', 'MQTT', 'InfluxDB', 'Grafana'],
       link: '#',
       github: '#'
