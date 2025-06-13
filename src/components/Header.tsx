@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ bulge }) => {
         {/* Logo + Title */}
         <div className="flex items-center space-x-3">
           <img
-            src="/fb-dp.png"
+            src="../src/assets/logo.png"
             alt="ProntoByte Logo"
             className="h-12 w-12 rounded-full animate-pulse"
           />
