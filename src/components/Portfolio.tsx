@@ -10,7 +10,7 @@ const Portfolio = () => {
       title: 'E-Commerce Platform',
       category: 'Web Development',
       description: 'A modern e-commerce platform with advanced features including real-time inventory, payment processing, and analytics dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
+      image: '../src/assets/Web_Development.jpeg',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       link: '#',
       github: '#'
@@ -19,7 +19,7 @@ const Portfolio = () => {
       title: 'Healthcare Management System',
       category: 'Enterprise Software',
       description: 'Comprehensive healthcare management system for hospitals and clinics with patient records, scheduling, and billing.',
-      image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg',
+      image: '../src/assets/Enterprise_Software.jpeg',
       technologies: ['Angular', 'Java', 'PostgreSQL', 'AWS'],
       link: '#',
       github: '#'
@@ -28,7 +28,7 @@ const Portfolio = () => {
       title: 'Financial Analytics Dashboard',
       category: 'Data Analytics',
       description: 'Real-time financial analytics dashboard with advanced reporting and predictive analytics capabilities.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
+      image: '../src/assets/Data_Analytics.jpeg',
       technologies: ['Python', 'Django', 'D3.js', 'TensorFlow'],
       link: '#',
       github: '#'
@@ -37,7 +37,7 @@ const Portfolio = () => {
       title: 'Mobile Banking App',
       category: 'Mobile Development',
       description: 'Secure mobile banking application with biometric authentication and real-time transaction monitoring.',
-      image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg',
+      image: '../src/assets/Mobile_Development.jpeg',
       technologies: ['React Native', 'Firebase', 'Biometrics', 'Encryption'],
       link: '#',
       github: '#'
@@ -46,7 +46,7 @@ const Portfolio = () => {
       title: 'Cloud Infrastructure Migration',
       category: 'Cloud Solutions',
       description: 'Complete migration of legacy systems to AWS cloud with improved scalability and reduced costs.',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+      image: '../src/assets/Cloud_Solutions.jpeg',
       technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
       link: '#',
       github: '#'
@@ -55,7 +55,7 @@ const Portfolio = () => {
       title: 'IoT Monitoring System',
       category: 'IoT Development',
       description: 'Industrial IoT monitoring system for real-time equipment tracking and predictive maintenance.',
-      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
+      image: '../src/assets/IoT_Development.jpeg',
       technologies: ['IoT', 'MQTT', 'InfluxDB', 'Grafana'],
       link: '#',
       github: '#'
