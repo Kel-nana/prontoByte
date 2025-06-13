@@ -1,0 +1,40 @@
+/* zipping.css */
+.text--zipping .char {
+  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s),
+              opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
+}
+
+.text--zipping[data-scroll='out'] .char {
+  opacity: 0;
+}
+
+.text--zipping[data-scroll='out'] .char:nth-of-type(odd) {
+  transform: translateY(-100%);
+}
+
+.text--zipping[data-scroll='out'] .char:nth-of-type(even) {
+  transform: translateY(100%);
+}
+
+.text--zipping[data-scroll='in'] .char:nth-of-type(odd) {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.text--zipping[data-scroll='in'] .char:nth-of-type(even) {
+  transform: translateY(0%);
+}
+
+.icon--zipping {
+  transition: transform 1.6s ease, opacity 1.9s ease;
+}
+
+.icon--zipping[data-scroll='out'] {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.icon--zipping[data-scroll='in'] {
+  transform: translateY(0%);
+  opacity: 1;
+}

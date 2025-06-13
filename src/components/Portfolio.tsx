@@ -1,5 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import ZippingText from '../animations/ZippingText/zippingText';
+import BulgeText from '../animations/BulgeText/BulgeText';
+
 
 const Portfolio = () => {
   const projects = [
@@ -7,7 +10,7 @@ const Portfolio = () => {
       title: 'E-Commerce Platform',
       category: 'Web Development',
       description: 'A modern e-commerce platform with advanced features including real-time inventory, payment processing, and analytics dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
+      image: '../src/assets/Web_Development.jpeg',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       link: '#',
       github: '#'
@@ -16,7 +19,7 @@ const Portfolio = () => {
       title: 'Healthcare Management System',
       category: 'Enterprise Software',
       description: 'Comprehensive healthcare management system for hospitals and clinics with patient records, scheduling, and billing.',
-      image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg',
+      image: '../src/assets/Enterprise_Software.jpeg',
       technologies: ['Angular', 'Java', 'PostgreSQL', 'AWS'],
       link: '#',
       github: '#'
@@ -25,7 +28,7 @@ const Portfolio = () => {
       title: 'Financial Analytics Dashboard',
       category: 'Data Analytics',
       description: 'Real-time financial analytics dashboard with advanced reporting and predictive analytics capabilities.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
+      image: '../src/assets/Data_Analytics.jpeg',
       technologies: ['Python', 'Django', 'D3.js', 'TensorFlow'],
       link: '#',
       github: '#'
@@ -34,7 +37,7 @@ const Portfolio = () => {
       title: 'Mobile Banking App',
       category: 'Mobile Development',
       description: 'Secure mobile banking application with biometric authentication and real-time transaction monitoring.',
-      image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg',
+      image: '../src/assets/Mobile_Development.jpeg',
       technologies: ['React Native', 'Firebase', 'Biometrics', 'Encryption'],
       link: '#',
       github: '#'
@@ -43,7 +46,7 @@ const Portfolio = () => {
       title: 'Cloud Infrastructure Migration',
       category: 'Cloud Solutions',
       description: 'Complete migration of legacy systems to AWS cloud with improved scalability and reduced costs.',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+      image: '../src/assets/Cloud_Solutions.jpeg',
       technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
       link: '#',
       github: '#'
@@ -52,7 +55,7 @@ const Portfolio = () => {
       title: 'IoT Monitoring System',
       category: 'IoT Development',
       description: 'Industrial IoT monitoring system for real-time equipment tracking and predictive maintenance.',
-      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
+      image: '../src/assets/IoT_Development.jpeg',
       technologies: ['IoT', 'MQTT', 'InfluxDB', 'Grafana'],
       link: '#',
       github: '#'
@@ -70,9 +73,11 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 bg-[#9BD6C9]/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Portfolio
-          </h2>
+          </h2> */}
+          <BulgeText text="Our Portfolio" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"/>
+
           <p className="text-xl text-[#243c5a] max-w-3xl mx-auto leading-relaxed">
             Explore our recent projects and see how we've helped businesses 
             achieve their digital transformation goals.
@@ -91,7 +96,8 @@ const Portfolio = () => {
                   : 'bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 border-2 border-solid border border-x-[#253874]/125 border-y-[#9BD6C9]/25  border border-gray-200'
               }`}
             >
-              {category}
+              {/* {category} */}
+              <BulgeText text={category} />
             </button>
           ))}
         </div>
@@ -131,7 +137,7 @@ const Portfolio = () => {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                  {project.title}
+                  <ZippingText text={project.title} />
                 </h3>
                 
                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -144,7 +150,8 @@ const Portfolio = () => {
                       key={techIndex}
                       className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded"
                     >
-                      {tech}
+                      {/* {tech} */}
+                      <ZippingText text={tech} />
                     </span>
                   ))}
                 </div>
@@ -162,7 +169,7 @@ const Portfolio = () => {
             href="#contact"
             className="inline-flex items-center bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 border-2 border-solid border border-x-[#253874]/125 border-y-[#9BD6C9]/25 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
-            Let's Work Together
+            <BulgeText text= "Let's Work Together" />
           </a>
         </div>
       </div>

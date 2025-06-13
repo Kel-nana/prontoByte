@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Target, Users, Award, Lightbulb } from 'lucide-react';
+import Splitting from 'splitting';
+import ScrollOut from 'scroll-out';
+import 'splitting/dist/splitting.css';
+import 'splitting/dist/splitting-cells.css';
+import ZippingText from '../animations/ZippingText/zippingText';
+import TurningText from '../animations/TurningText/turningText'
 
 const About = () => {
+
+  useEffect(() => {
+    Splitting();
+    ScrollOut({
+      targets: '.text_perspective',
+    })
+  }, []);
+
   const values = [
     {
       icon: Target,
@@ -29,7 +43,11 @@ const About = () => {
     <section id="about" className="relative py-20 bg-[#9BD6C9]/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text_perspective">
+          <h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text_perspective"
+            data-splitting=""
+            data-scroll="out"
+          >
             About ProntoByte
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -38,9 +56,15 @@ const About = () => {
           </p>
         </div>
 
+        {/* The rest of your component unchanged */}
+
+
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-gray-900">
+            <h3 className="text-3xl font-bold text-gray-900 text_perspective text_perspective--delayed .char"
+            data-splitting=""
+            data-scroll="out"
+            >
               Transforming Ideas into Digital Reality
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -92,12 +116,16 @@ const About = () => {
           {values.map((value, index) => (
             <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="icon--zipping w-16 h-16 bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h4>
-              <p className="text-gray-600 leading-relaxed">{value.description}</p>
+              <h4 className="text-xl font-bold text-gray-900 mb-4"><ZippingText text={value.title} />
+              {/* <ZippingText text={value.title} /> */}
+
+</h4>
+              {/* <p className="text-gray-600 leading-relaxed">{value.description}</p> */}
+              <TurningText text={value.description} />
             </div>
           ))}
         </div>

@@ -1,0 +1,15 @@
+.text--bulge[data-scroll='in'] .char {
+  animation-name: bulge;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  animation-delay: calc(var(--char-index) * 0.06s);
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes bulge {
+  50% {
+    transform: scale(1.7);
+  }
+}
+

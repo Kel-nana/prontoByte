@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(155, 214, 201, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #243c5a;
+  border-radius: 4px;
+}
+
 .content {
   height: 40px;
   overflow: hidden;
@@ -65,13 +78,71 @@
   -webkit-perspective: 16px;
           perspective: 16px;
 }
+
 .text_perspective .char {
+  transition: opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
+}
+
+.text_perspective[data-scroll='out'] .char {
+  opacity: 0;
+  transform: translate3d(-25px, -20px, -800px);
+}
+
+/* zipping.css */
+/* .text--zipping .char {
+  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s),
+              opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
+}
+
+.text--zipping[data-scroll='out'] .char {
+  opacity: 0;
+}
+
+.text--zipping[data-scroll='out'] .char:nth-of-type(odd) {
+  transform: translateY(-100%);
+}
+
+.text--zipping[data-scroll='out'] .char:nth-of-type(even) {
+  transform: translateY(100%);
+} */
+
+
+/* .text--zipping .char {
   transition: opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
   transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
   transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
 }
-.text_perspective [data-scroll='out'] .char {
+.text--zipping [data-scroll='out'] .char {
   opacity: 0;
-  -webkit-transform: translate3d(-25px, -20px, -800px);
-          transform: translate3d(-25px, -20px, -800px);
 }
+.text--zipping [data-scroll='out'] .char:nth-of-type(1) {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(2) {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(3) {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(4) {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(5) {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(6) {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+.text--zipping [data-scroll='out'] .char:nth-of-type(7) {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+
+ */

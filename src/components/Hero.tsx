@@ -1,5 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { ArrowRight, Code, Database, Shield } from 'lucide-react';
+import heroBg from '../assets/hero_bg.jpeg';
 
 // 1️⃣ Feature Icons Data
 const featureIcons = [
@@ -40,7 +41,7 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-purple-900 to-indigo-900">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${heroBg})` }}></div>
       </div>
 
       {/* Animated Background Elements */}
