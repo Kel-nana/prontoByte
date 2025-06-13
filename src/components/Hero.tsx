@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold text-[#9BD6C9] leading-tight">
               We Make
-              <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-400 to-deepBlue bg-clip-text text-transparent">
                 IT Work
               </span>
             </h1>
