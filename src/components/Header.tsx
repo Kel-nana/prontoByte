@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import BulgeTextHeader from '../animations/BulgeText/BulgeTextHeader';
+import Logo from '../assets/logo.png';
+
+
 
 interface HeaderProps {
   /** true whenever you want the header text to bulge */
@@ -38,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ bulge }) => {
         {/* Logo + Title */}
         <div className="flex items-center space-x-3">
           <img
-            src="../src/assets/logo.png"
+            src= {Logo}
             alt="ProntoByte Logo"
             className="h-12 w-12 rounded-full animate-pulse"
           />
