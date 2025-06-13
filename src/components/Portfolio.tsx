@@ -1,6 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import ZippingText from '../animations/ZippingText/zippingText';
+import BulgeText from '../animations/BulgeText/BulgeText';
+
 
 const Portfolio = () => {
   const projects = [
@@ -71,9 +73,11 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 bg-[#9BD6C9]/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Portfolio
-          </h2>
+          </h2> */}
+          <BulgeText text="Our Portfolio" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"/>
+
           <p className="text-xl text-[#243c5a] max-w-3xl mx-auto leading-relaxed">
             Explore our recent projects and see how we've helped businesses 
             achieve their digital transformation goals.
@@ -92,7 +96,8 @@ const Portfolio = () => {
                   : 'bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 border-2 border-solid border border-x-[#253874]/125 border-y-[#9BD6C9]/25  border border-gray-200'
               }`}
             >
-              {category}
+              {/* {category} */}
+              <BulgeText text={category} />
             </button>
           ))}
         </div>
@@ -164,7 +169,7 @@ const Portfolio = () => {
             href="#contact"
             className="inline-flex items-center bg-gradient-to-r from-[#253874]/75 to-[#9BD6C9]/25 border-2 border-solid border border-x-[#253874]/125 border-y-[#9BD6C9]/25 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
-            Let's Work Together
+            <BulgeText text= "Let's Work Together" />
           </a>
         </div>
       </div>

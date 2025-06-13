@@ -1,5 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { ArrowRight, Code, Database, Shield } from 'lucide-react';
+
 
 // 1️⃣ Feature Icons Data
 const featureIcons = [
