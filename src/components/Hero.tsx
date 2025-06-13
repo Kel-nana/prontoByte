@@ -1,6 +1,6 @@
 // import React from 'react';
 import { ArrowRight, Code, Database, Shield } from 'lucide-react';
-import heroBg from '../assets/hero_bg.jpeg';
+import heroBg from '../assets/hero_bg_3.png';
 
 // 1️⃣ Feature Icons Data
 const featureIcons = [
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
 
             <p className="text-xl md:text-2xl text-[#9BD6C9] max-w-3xl mx-auto leading-relaxed">
-              Transforming businesses through innovative technology solutions,
+              We empowers businesses through smart automation, cybersecurity, productivity tools ,innovative technology solutions,
               expert consulting, and cutting-edge development services.
             </p>
           </div>
