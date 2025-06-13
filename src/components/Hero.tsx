@@ -1,6 +1,6 @@
 // import React from 'react';
 import { ArrowRight, Code, Database, Shield } from 'lucide-react';
-import heroBg from '../assets/hero_bg.jpeg';
+import heroBg from '../assets/hero_bg_3.png';
 
 // 1️⃣ Feature Icons Data
 const featureIcons = [
