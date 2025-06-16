@@ -68,18 +68,18 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
                   <a href="mailto:hello@prontobyte.com" className="text-white hover:text-[#9BD6C9] transition-colors duration-300">
-                    kelvin.irungu@prontobyte.ai
+                    info@prontobyte.ai
                   </a>
                 </div>
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-400" />
                   <a href="tel:+15551234567" className="text-white hover:text-[#9BD6C9] transition-colors duration-300">
                     +254 782 908 709
                   </a>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-blue-400" />
-                  <span className="text-white hover:text-[#9BD6C9]">123 Street, Nairobi City,</span>
+                  <span className="text-white hover:text-[#9BD6C9]">Kilimani, Nairobi, Kenya</span>
                 </div>
               </div>
             </div>

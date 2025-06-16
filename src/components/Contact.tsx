@@ -58,19 +58,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'kelvin.irungu@prontobyte.ai',
-      link: 'mailto:kelvin.irungu@prontobyte.ai'
+      details: 'info@prontobyte.ai',
+      link: 'mailto:info@prontobyte.ai'
     },
-    {
-      icon: Phone,
-      title: 'Phone',
-      details: '+254 782 908 709',
-      link: '.........'
-    },
+    // {
+    //   icon: Phone,
+    //   title: 'Phone',
+    //   details: '+254 782 908 709',
+    //   link: '.........'
+    // },
     {
       icon: MapPin,
       title: 'Office',
-      details: '123 Street, Nairobi City, DC 12345',
+      details: 'Kilimani, Nairobi, Kenya',
       link: '#'
     },
     {
@@ -86,7 +86,7 @@ const Contact = () => {
     <section id="contact" className="relative py-20 bg-[#243c5a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-pulse">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-pulse ">
             Get In Touch
           </h2>
           <p className="text-xl text-[#9BD6C9] max-w-3xl mx-auto leading-relaxed">
