@@ -226,11 +226,13 @@ const Contact = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Find Us</h3>
               <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <Globe className="w-12 h-12 mx-auto mb-2" />
-                  <p>Interactive Map</p>
-                  <p className="text-sm">123 Street, Nairobi City</p>
-                </div>
+                <iframe
+    className="w-full h-full border-0 rounded-lg"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.256562398083!2d36.78699975884978!3d-1.2855113268424825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a0dfd90fa55%3A0x37f5057a6f21bc7c!2sKilimani%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1750069396800!5m2!1sen!2ske"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
               </div>
             </div>
 
