@@ -3,8 +3,8 @@ import { ExternalLink, Github } from 'lucide-react';
 import ZippingText from '../animations/ZippingText/zippingText';
 import BulgeText from '../animations/BulgeText/BulgeText';
 import Cloud_Solutions from '../assets/Cloud_Solutions.jpeg';
-import Data_Analytics from '../assets/Data_Analytics.jpeg';
-import Enterprise_Software from '../assets/Enterprise_Software.jpeg';
+// import Data_Analytics from '../assets/';
+import Cog from '../assets/Cog.png';
 import IoT_Development from '../assets/IoT_Development.jpeg';
 // import Mobile_Development from '../assets/Mobile_Development.jpeg';
 import Web_Development from '../assets/Web_Development.jpeg';
@@ -69,6 +69,12 @@ const Portfolio = () => {
   //   link: '#',
   //   github: '#'
   // },
+    {
+    icon: Cog,
+    title: 'IT Consulting',
+    description: 'Strategic technology consulting to help you make informed decisions and optimize your IT infrastructure.',
+    features: ['Technology Strategy', 'Digital Transformation', 'Process Optimization', 'Vendor Selection']
+  },
   {
     title: 'Cloud Infrastructure Migration',
     category: 'Cloud Solutions',
