@@ -6,69 +6,103 @@ import Cloud_Solutions from '../assets/Cloud_Solutions.jpeg';
 import Data_Analytics from '../assets/Data_Analytics.jpeg';
 import Enterprise_Software from '../assets/Enterprise_Software.jpeg';
 import IoT_Development from '../assets/IoT_Development.jpeg';
-import Mobile_Development from '../assets/Mobile_Development.jpeg';
+// import Mobile_Development from '../assets/Mobile_Development.jpeg';
 import Web_Development from '../assets/Web_Development.jpeg';
+import Hosting_Services from '../assets/Hosting_Services.png';
+import Automation from '../assets/Automation.png';
+import Cybersecurity from '../assets/Cybersecurity.jpg';
 
 
 const Portfolio = () => {
   const projects = [
-    {
-      title: 'E-Commerce Platform',
-      category: 'Web Development',
-      description: 'A modern e-commerce platform with advanced features including real-time inventory, payment processing, and analytics dashboard.',
-      image: Web_Development,
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Healthcare Management System',
-      category: 'Enterprise Software',
-      description: 'Comprehensive healthcare management system for hospitals and clinics with patient records, scheduling, and billing.',
-      image: Enterprise_Software,
-      technologies: ['Angular', 'Java', 'PostgreSQL', 'AWS'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Financial Analytics Dashboard',
-      category: 'Data Analytics',
-      description: 'Real-time financial analytics dashboard with advanced reporting and predictive analytics capabilities.',
-      image: Data_Analytics,
-      technologies: ['Python', 'Django', 'D3.js', 'TensorFlow'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Mobile Banking App',
-      category: 'Mobile Development',
-      description: 'Secure mobile banking application with biometric authentication and real-time transaction monitoring.',
-      image: Mobile_Development,
-      technologies: ['React Native', 'Firebase', 'Biometrics', 'Encryption'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Cloud Infrastructure Migration',
-      category: 'Cloud Solutions',
-      description: 'Complete migration of legacy systems to AWS cloud with improved scalability and reduced costs.',
-      image: Cloud_Solutions,
-      technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'IoT Monitoring System',
-      category: 'IoT Development',
-      description: 'Industrial IoT monitoring system for real-time equipment tracking and predictive maintenance.',
-      image: IoT_Development,
-      technologies: ['IoT', 'MQTT', 'InfluxDB', 'Grafana'],
-      link: '#',
-      github: '#'
-    }
-  ];
+      {
+    title: 'Workflow Automation for Legal Firm',
+    category: 'Process Automation',
+    description: 'Streamlined case intake, document generation, and client notifications through no-code automation tools.',
+    image: Automation,
+    technologies: ['Zapier', 'Make.com', 'Google Workspace', 'Power Automate'],
+    link: '#',
+    github: '#'
+  },
+  {
+    title: 'Secure Email & Domain Hosting Setup',
+    category: 'Email & Domain Hosting',
+    description: 'Business-grade email setup with domain registration, DNS management, and spam protection for a growing SME.',
+    image: Hosting_Services,
+    technologies: ['Zoho Mail', 'Namecheap', 'Cloudflare', 'Google Domains'],
+    link: '#',
+    github: '#'
+  },
+  {
+    title: 'Endpoint Security Deployment',
+    category: 'Cybersecurity',
+    description: 'Company-wide rollout of endpoint protection and backup strategy to guard against ransomware and data loss.',
+    image: Cybersecurity,
+    technologies: ['Bitdefender EDR', 'Acronis', 'Google Workspace Backup', 'EDR Dashboard'],
+    link: '#',
+    github: '#'
+  },
+  {
+    title: 'E-Commerce Platform',
+    category: 'Web Development',
+    description: 'A modern e-commerce platform with real-time inventory management, integrated payments, and a data-rich analytics dashboard.',
+    image: Web_Development,
+    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    link: '#',
+    github: '#'
+  },
+  // {
+  //   title: 'Healthcare Management System',
+  //   category: 'Enterprise Software',
+  //   description: 'A secure and scalable hospital management solution featuring digital patient records, staff scheduling, and automated billing.',
+  //   image: Enterprise_Software,
+  //   technologies: ['Angular', 'Java', 'PostgreSQL', 'AWS'],
+  //   link: '#',
+  //   github: '#'
+  // },
+  // {
+  //   title: 'Financial Analytics Dashboard',
+  //   category: 'Data Analytics',
+  //   description: 'Interactive dashboard for real-time financial insights, trend forecasting, and KPI tracking with advanced data visualization.',
+  //   image: Data_Analytics,
+  //   technologies: ['Python', 'Django', 'D3.js', 'TensorFlow'],
+  //   link: '#',
+  //   github: '#'
+  // },
+  {
+    title: 'Cloud Infrastructure Migration',
+    category: 'Cloud Solutions',
+    description: 'Full migration of on-premise systems to AWS Cloud, improving performance, scalability, and disaster recovery.',
+    image: Cloud_Solutions,
+    technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
+    link: '#',
+    github: '#'
+  },
+  {
+    title: 'IoT Monitoring System',
+    category: 'IoT Development',
+    description: 'An industrial IoT solution for live equipment monitoring and predictive maintenance with smart alerts.',
+    image: IoT_Development,
+    technologies: ['IoT', 'MQTT', 'InfluxDB', 'Grafana'],
+    link: '#',
+    github: '#'
+  }
 
-  const categories = ['All', 'Web Development', 'Mobile Development', 'Data Analytics', 'Cloud Solutions', 'Enterprise Software', 'IoT Development'];
+];
+
+
+const categories = [
+  'All',
+  'Cybersecurity',
+  'Process Automation',
+  'Email & Domain Hosting',
+  'Web Development',
+  // 'Data Analytics',
+  'Cloud Solutions',
+  // 'Enterprise Software',
+  'IoT Development'
+];
+
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const filteredProjects = activeCategory === 'All' 

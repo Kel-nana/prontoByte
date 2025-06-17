@@ -1,47 +1,49 @@
-import React from 'react';
-import { Code, Cloud, Smartphone, Database, Shield, Cog } from 'lucide-react';
+// import React from 'react';
+import { Code, Cloud, Zap, Mail, Shield, Cog } from 'lucide-react';
 import ZippingText from '../animations/ZippingText/zippingText';
 import TurningText from '../animations/TurningText/turningText'
 
 
 const Services = () => {
   const services = [
-    {
-      icon: Code,
-      title: 'Custom Software Development',
-      description: 'Tailored software solutions built to meet your specific business requirements and scale with your growth.',
-      features: ['Web Applications', 'Enterprise Software', 'API Development', 'System Integration']
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud Solutions',
-      description: 'Migrate to the cloud and leverage scalable, secure, and cost-effective cloud infrastructure.',
-      features: ['Cloud Migration', 'AWS/Azure Setup', 'DevOps', 'Cloud Security']
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile App Development',
-      description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.',
-      features: ['iOS Development', 'Android Development', 'React Native', 'Flutter']
-    },
-    {
-      icon: Database,
-      title: 'Data Analytics',
-      description: 'Transform your data into actionable insights with advanced analytics and business intelligence.',
-      features: ['Data Warehousing', 'Business Intelligence', 'Machine Learning', 'Data Visualization']
-    },
-    {
-      icon: Shield,
-      title: 'Cybersecurity',
-      description: 'Protect your digital assets with comprehensive security solutions and best practices.',
-      features: ['Security Audits', 'Penetration Testing', 'Compliance', 'Security Training']
-    },
-    {
-      icon: Cog,
-      title: 'IT Consulting',
-      description: 'Strategic technology consulting to help you make informed decisions and optimize your IT infrastructure.',
-      features: ['Technology Strategy', 'Digital Transformation', 'Process Optimization', 'Vendor Selection']
-    }
+      {
+  icon: Shield,
+  title: 'Cybersecurity',
+  description: 'Protect your digital assets with comprehensive security solutions and best practices.',
+  features: ['Security Audits', 'Penetration Testing', 'Compliance', 'Security Training']
+},
+{
+  icon: Cog,
+  title: 'IT Consulting',
+  description: 'Strategic technology consulting to help you make informed decisions and optimize your IT infrastructure.',
+  features: ['Technology Strategy', 'Digital Transformation', 'Process Optimization', 'Vendor Selection']
+},
+{
+  icon: Zap, // Choose an automation-themed icon here
+  title: 'Process Automation',
+  description: 'Eliminate repetitive tasks and boost productivity through intelligent workflow automation.',
+  features: ['Zapier / Power Automate', 'CRM & ERP Integration', 'Workflow Optimization', 'Custom Bots & Triggers']
+},
+{
+  icon: Mail, // Email-themed icon
+  title: 'Email & Domain Hosting',
+  description: 'Reliable business-class email solutions and domain hosting with full admin control and security.',
+  features: ['Domain Registration', 'Business Email Setup', 'DNS Management', 'Email Security & Backup']
+},
+{
+  icon: Code,
+  title: 'Custom Software Development',
+  description: 'Tailored software solutions built to meet your specific business requirements and scale with your growth.',
+  features: ['Web Applications', 'Enterprise Software', 'API Development', 'System Integration']
+},
+{
+  icon: Cloud,
+  title: 'Cloud Solutions',
+  description: 'Migrate to the cloud and leverage scalable, secure, and cost-effective cloud infrastructure.',
+  features: ['Cloud Migration', 'AWS/Azure Setup', 'DevOps', 'Cloud Security']
+}
+
+
   ];
 
   return (
