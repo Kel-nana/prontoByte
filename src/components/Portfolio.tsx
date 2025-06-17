@@ -70,10 +70,13 @@ const Portfolio = () => {
   //   github: '#'
   // },
     {
-    icon: Cog,
     title: 'IT Consulting',
+    category: 'IT Consulting',
     description: 'Strategic technology consulting to help you make informed decisions and optimize your IT infrastructure.',
-    features: ['Technology Strategy', 'Digital Transformation', 'Process Optimization', 'Vendor Selection']
+    image: Cog,
+    technologies: ['Technology Strategy', 'Digital Transformation', 'Process Optimization', 'Vendor Selection'],
+    link: '#',
+    github: '#'
   },
   {
     title: 'Cloud Infrastructure Migration',
@@ -103,7 +106,7 @@ const categories = [
   'Process Automation',
   'Email & Domain Hosting',
   'Web Development',
-  // 'Data Analytics',
+  'IT Consulting',
   'Cloud Solutions',
   // 'Enterprise Software',
   'IoT Development'
